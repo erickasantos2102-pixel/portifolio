@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Ericka | Redes de Computadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <header>
+        <nav>
+            <h1>Ericka</h1>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 1. Página Inicial (Apresentação) -->
+    <section id="inicio" class="hero">
+        <h2>Olá, me chamo Ericka</h2>
+        <p>Estudante do curso técnico em Redes de Computadores no CEET Vasco Coutinho.</p>
+    </section>
+
+    <!-- 2. Sobre o Aluno -->
+    <section id="sobre" class="container">
+        <h2>Sobre Mim</h2>
+        <p>Sou estudante do curso de Redes de Computadores. Durante a minha formação no CEET Vasco Coutinho desenvolvi conhecimentos práticos em configuração de roteadores e switches, cabeamento estruturado, servidores Windows/Linux, segurança de redes e projetos IoT.</p>
+    </section>
+
+    <!-- 3. Projetos Desenvolvidos (Mínimo 3) -->
+    <section id="projetos" class="container">
+        <h2>Projetos Desenvolvidos</h2>
+        <div class="grid-projetos">
+            
+            <!-- Projeto 1 -->
+            <div class="card">
+                <img src="img/projeto1.png" alt="Configuração de Roteador no Cisco Packet Tracer">
+                <h3>1. Interligação de Redes no Packet Tracer</h3>
+                <p><strong>Descrição:</strong> Configuração de um roteador Cisco 1941 para interligar duas redes locais distintas (LANs) com switches 2960, incluindo definição de endereços IP e gateway padrão.</p>
+                <p><strong>Código / Comandos:</strong><br>
+                <code>interface gig0/0</code><br>
+                <code>ip address 192.168.1.1 255.255.255.0</code><br>
+                <code>no shutdown</code></p>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="card">
+                <img src="img/projeto2.png" alt="Análise de Tráfego HTTP no Wireshark">
+                <h3>2. Análise de Pacotes com Wireshark</h3>
+                <p><strong>Descrição:</strong> Captura e inspeção de tráfego de rede em ambiente Ubuntu utilizando o Wireshark para análise de requisições HTTP, cabeçalhos TCP/IP e diagnóstico de comunicação.</p>
+                <p><strong>Código / Filtros usados:</strong><br>
+                <code>http</code><br>
+                <code>ip.addr == 10.0.2.15</code></p>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="card">
+                <img src="img/projeto3.png" alt="Monitoramento de Port Scan e Firewall iptables no Linux">
+                <h3>3. Segurança de Rede: Port Scanning e Firewall iptables</h3>
+                <p><strong>Descrição:</strong> Laboratório prático em Linux/Docker simulando varreduras com Nmap e bloqueio de pacotes maliciosos com regras de firewall iptables e monitoramento de logs.</p>
+                <p><strong>Código / Comandos:</strong><br>
+                <code>nmap -sS 192.168.20.10</code><br>
+                <code>iptables -A FORWARD -p tcp --tcp-flags ALL FIN,PSH,URG -j DROP</code></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. Contato -->
+    <section id="contato" class="container">
+        <h2>Contato</h2>
+        <p>Email: ericka.santos2102@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Ericka - CEET Vasco Coutinho - 2026</p>
+    </footer>
+
+</body>
+</html>
